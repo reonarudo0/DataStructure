@@ -1,2 +1,2 @@
 # DataStructure
-Some base data structure algorithms in Python.
+Base data structure algorithms in Python.
