@@ -2,12 +2,12 @@ def binary_search_iter(arr,n):
     start = 0
     end = len(arr)-1
 
-    while(start<=end or end>=start):
+    while(start<=end):
         mid = (start+end)//2
         if(arr[mid] == n):
             while(mid > 0 and arr[mid-1] == n):
                 mid = mid - 1
-            return ('{} found at {}'.format(n,mid+1))
+            return ('{} found at {}'.format(n,mid))
         elif(arr[mid]<n):
             start = mid+1
         else:
